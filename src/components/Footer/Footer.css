@@ -1,0 +1,23 @@
+.footer-div {
+    width: 30%;
+    margin-left: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-div a {
+    margin-bottom: 2%;
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    object-fit: cover;
+    width: 9%;
+}
+
+.footer-div a img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}

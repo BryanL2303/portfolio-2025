@@ -1,0 +1,22 @@
+.header-div {
+    margin: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: right;
+}
+
+.header-button {
+    background-color: white;
+    border: none;
+    font-size: large;
+    margin-left: 1.5%;
+}
+
+.header-button:hover {
+    color: #4394FF;
+    border: none;
+}
+
+.header-button.selected {
+    color: #4394FF;
+}
