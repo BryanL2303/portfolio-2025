@@ -2,8 +2,24 @@ import './Home.css'
 import profilePhoto from '../../assets/profile.jpeg'
 import HomePost from './HomePost'
 import HomeFeaturedWork from './HomeFeaturedWork'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
 function Home({setPage}) {
+  const apiUrl = import.meta.env.VITE_BACKEND_URL;
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    axios.get(apiUrl + '/api/posts')
+    .then((resp) => {
+      console.log(resp.data)
+      // Express
+      //setPosts(resp.data[0])
+      // Flask
+      setPosts(resp.data)
+    })
+  }, [])
+
   function navigatePage(e) {
     setPage(e.target.name)
     console.log(e.target.name)
@@ -50,8 +66,9 @@ function Home({setPage}) {
         <label className='title'>Recent posts</label>
         <button className='redirect-button' name='Blog' onClick={navigatePage}>View all</button>
         <div className='row-section'>
-          <HomePost />
-          <HomePost />
+          {posts.map((post) => {
+            return(<HomePost key={post.id} post={post} />)
+          })}
         </div>
       </div>
 
