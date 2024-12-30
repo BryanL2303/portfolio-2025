@@ -25,3 +25,9 @@ dist-ssr
 
 .env
 flask-backend/.env
+
+# amplify
+node_modules
+.amplify
+amplify_outputs*
+amplifyconfiguration*
