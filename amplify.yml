@@ -29,11 +29,11 @@ frontend:
         - amplify publish
 
 artifacts:
-  frontend:
-    baseDirectory: frontend/dist
-    files:
-      - '**/*'
-  backend:
-    baseDirectory: flask-backend/lambda
-    files:
-      - '**/*'
+  baseDirectory: frontend/dist
+  files:
+    - '**/*'
+
+cache:
+  paths:
+    - frontend/node_modules/**  
+    - flask-backend/lambda/python/**
