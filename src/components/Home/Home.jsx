@@ -10,7 +10,8 @@ function Home({setPage}) {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    axios.get(apiUrl + '/api/posts')
+    // apiUrl + '/api/posts' 
+    axios.get('https://07dzkq7tyg.execute-api.ap-southeast-1.amazonaws.com/default/getPosts')
     .then((resp) => {
       console.log(resp.data)
       // Express
