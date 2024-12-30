@@ -11,6 +11,9 @@ backend:
       commands:
         - echo "Deploying backend to AWS Lambda"
         - amplify push
+  cache:
+    paths:
+      - flask-backend/lambda/python/**
 
 frontend:
   phases:
@@ -27,13 +30,10 @@ frontend:
       commands:
         - echo "Frontend build completed"
         - amplify publish
-
-artifacts:
-  baseDirectory: frontend/
-  files:
-    - '**/*'
-
-cache:
-  paths:
-    - frontend/node_modules/**  
-    - flask-backend/lambda/python/**
+  artifacts:
+    baseDirectory: frontend/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - frontend/node_modules/**
