@@ -20,6 +20,8 @@ frontend:
     preBuild:
       commands:
         - echo "Installing dependencies for frontend"
+        - cd ..
+        - cd ..
         - cd frontend
         - npm install
     build:
