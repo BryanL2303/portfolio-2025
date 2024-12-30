@@ -5,7 +5,7 @@ backend:
       commands:
         - echo "Backend build phase"
         - cd flask-backend/lambda
-        - pip install -r requirements.txt -t python/
+        # - pip install -r requirements.txt -t python/
         - zip -r ../lambda.zip .
     deploy:
       commands:
