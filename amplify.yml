@@ -31,8 +31,8 @@ frontend:
     postBuild:
       commands:
         - echo "Frontend build completed"
-        # - cd ..
-        # - amplify publish
+        - cd ..
+        - amplify publish
   artifacts:
     baseDirectory: frontend/dist
     files:
