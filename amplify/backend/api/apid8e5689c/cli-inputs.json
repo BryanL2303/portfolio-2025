@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/flask-backend": {
+      "name": "/flask-backend",
+      "lambdaFunction": "portfolioapp67462e57",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
