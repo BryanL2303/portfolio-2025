@@ -10,6 +10,7 @@ backend:
         - cd ..
         - cd ..
         - echo "Deploying backend to AWS Lambda"
+        - amplify pull --appId d2hy9ixa5dc92p --envName
         - amplify push
     # deploy:
     #   commands:
