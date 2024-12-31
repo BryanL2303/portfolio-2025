@@ -7,15 +7,10 @@ backend:
         - cd flask-backend/lambda
         # - pip install -r requirements.txt -t python/
         - zip -r ../lambda.zip .
-        - cd ..
-        - cd ..
+    deploy:
+      commands:
         - echo "Deploying backend to AWS Lambda"
-        - amplify init
         - amplify push
-    # deploy:
-    #   commands:
-    #     - echo "Deploying backend to AWS Lambda"
-    #     - amplify push
   cache:
     paths:
       - flask-backend/lambda/python/**
@@ -25,6 +20,8 @@ frontend:
     preBuild:
       commands:
         - echo "Installing dependencies for frontend"
+        - cd ..
+        - cd ..
         - cd frontend
         - npm install
     build:
@@ -35,6 +32,7 @@ frontend:
       commands:
         - echo "Frontend build completed"
         - cd ..
+        - amplify init
         - amplify publish
   artifacts:
     baseDirectory: frontend/dist
