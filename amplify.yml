@@ -7,10 +7,12 @@ backend:
         - cd flask-backend/lambda
         # - pip install -r requirements.txt -t python/
         - zip -r ../lambda.zip .
-    deploy:
-      commands:
         - echo "Deploying backend to AWS Lambda"
         - amplify push
+    # deploy:
+    #   commands:
+    #     - echo "Deploying backend to AWS Lambda"
+    #     - amplify push
   cache:
     paths:
       - flask-backend/lambda/python/**
