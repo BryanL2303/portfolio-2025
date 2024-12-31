@@ -7,8 +7,8 @@ backend:
         - cd flask-backend/lambda
         # - pip install -r requirements.txt -t python/
         - zip -r ../lambda.zip .
-        - echo "Deploying backend to AWS Lambda"
-        - amplify push
+        # - echo "Deploying backend to AWS Lambda"
+        # - amplify push
     # deploy:
     #   commands:
     #     - echo "Deploying backend to AWS Lambda"
@@ -33,8 +33,8 @@ frontend:
     postBuild:
       commands:
         - echo "Frontend build completed"
-        - cd ..
-        - amplify publish
+        # - cd ..
+        # - amplify publish
   artifacts:
     baseDirectory: frontend/dist
     files:
