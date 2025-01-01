@@ -11,9 +11,8 @@ function Home({setPage}) {
 
   useEffect(() => {
     // apiUrl + '/api/posts' 
-    axios.get('https://07dzkq7tyg.execute-api.ap-southeast-1.amazonaws.com/default/getPosts')
+    axios.get(apiUrl + '/api/posts' )
     .then((resp) => {
-      console.log(resp.data)
       // Express
       //setPosts(resp.data[0])
       // Flask
