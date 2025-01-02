@@ -1,1 +1,1 @@
-release: vite build
+web: serve -s build
