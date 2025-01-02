@@ -1,1 +1,1 @@
-release: npm run build
+release: vite build
