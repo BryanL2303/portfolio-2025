@@ -9,6 +9,10 @@
     border-width: 1px;
 }
 
+.work-summary:hover {
+    background-color: lightgray;
+}
+
 .work-summary img {
     width: 30%;
     height: 95%;
@@ -26,7 +30,7 @@
     font-size: 28px;
 }
 
-.row-section {
+.work-feature-div .row-section {
     display: flex;
     width: 100%;
     margin-top: 2%;

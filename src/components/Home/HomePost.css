@@ -1,4 +1,4 @@
-.post-summary {
+.blog-feature-div .post-summary {
     padding: 3%;
     width: 47.5%;
     margin-right: 2.5%;
@@ -7,19 +7,23 @@
     border-radius: 10px;
 }
 
-.post-title {
+.blog-feature-div .post-summary:hover {
+    background-color: lightgray;
+}
+
+.blog-feature-div .post-title {
     font-weight: bold;
     font-size: 28px;
 }
 
-.row-section {
+.blog-feature-div .row-section {
     display: flex;
     width: 100%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.post-date {
+.blog-feature-div .post-date {
     width: 35%;
     border-right: solid;
     border-width: 1px;
@@ -28,10 +32,10 @@
     font-size: 18px;
 }
 
-.post-label {
+.blog-feature-div .post-label {
     font-size: 18px;
 }
 
-.post-description {
+.blog-feature-div .post-description {
     font-size: 16px;
 }

@@ -1,0 +1,38 @@
+
+.administration-page-feature .title-div {
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.administration-page-feature .title-div h1 {
+    width: 100%;
+}
+
+.administration-page-feature .title-div label {
+    font-size: small;
+}
+
+.administration-page-feature .paragraph-1-div {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.administration-page-feature .paragraph-2-div {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.administration-page-feature .paragraph-2-div img {
+    width: 100%;
+}
+
+.administration-page-feature .paragraph-3-div {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.administration-page-feature .paragraph-3-div img {
+    width: 100%;
+}

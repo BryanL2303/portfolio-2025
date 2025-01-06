@@ -1,0 +1,54 @@
+.work-summary {
+    margin-top: 5%;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    border-bottom: solid;
+    border-color: rgb(196, 196, 196);
+    border-width: 1px;
+}
+
+.work-summary img {
+    width: 30%;
+    height: 95%;
+    border-radius: 10px;
+}
+
+.work-summary .col-section {
+    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.work-title {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.row-section {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.work-year {
+    width: 62px;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 16px;
+    background-color: #142850;
+    color: white;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.work-label {
+    font-size: 20px;
+    color: #8695A4;
+}
+
+.work-description {
+    font-size: 16px;
+}

@@ -5,24 +5,47 @@ import HomeFeaturedWork from './HomeFeaturedWork'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-function Home({setPage}) {
+function Home() {
   const apiUrl = import.meta.env.VITE_BACKEND_URL;
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([
+    {
+      "id": 1,
+      "post_date": "Wed, 25 Dec 2024 00:00:00 GMT",
+      "post_description": "Website for administrative work.",
+      "post_label": "Fullstack development",
+      "post_title": "Administrative website for Boys' Brigade"
+    },
+    {
+      "id": 2,
+      "post_date": "Wed, 25 Dec 2024 00:00:00 GMT",
+      "post_description": "Creating website designs for UI/UX as part of E2E Process.",
+      "post_label": "Figma, Design",
+      "post_title": "Creating frontend designs with Figma"
+    }
+  ])
+  const featuredWorks = [
+    {
+      id: 1,
+      work_title: "Administrative Site | Boys' Brigade",
+      work_year: '2024',
+      work_label: 'Fullstack development',
+      work_description: 'Website for administrative work.'
+    }
+  ]
 
-  useEffect(() => {
-    // apiUrl + '/api/posts' 
-    axios.get(apiUrl + '/api/posts' )
-    .then((resp) => {
-      // Express
-      //setPosts(resp.data[0])
-      // Flask
-      setPosts(resp.data)
-    })
-  }, [])
+  // useEffect(() => {
+  //   // apiUrl + '/api/posts' 
+  //   axios.get(apiUrl + '/api/posts' )
+  //   .then((resp) => {
+  //     // Express
+  //     //setPosts(resp.data[0])
+  //     // Flask
+  //     setPosts(resp.data)
+  //   })
+  // }, [])
 
   function navigatePage(e) {
-    setPage(e.target.name)
-    console.log(e.target.name)
+    window.location.href = e.target.name
   }
 
   return (
@@ -64,7 +87,7 @@ function Home({setPage}) {
 
       <div className='blog-feature-div'>
         <label className='title'>Recent posts</label>
-        <button className='redirect-button' name='Blog' onClick={navigatePage}>View all</button>
+        <button className='redirect-button' name='/blogs' onClick={navigatePage}>View all</button>
         <div className='row-section'>
           {posts.map((post) => {
             return(<HomePost key={post.id} post={post} />)
@@ -74,9 +97,9 @@ function Home({setPage}) {
 
       <div className='work-feature-div'>
         <label className='title'>Featured works</label>
-        <HomeFeaturedWork />
-        <HomeFeaturedWork />
-        <HomeFeaturedWork />
+        {featuredWorks.map((featuredWork) => {
+          return <HomeFeaturedWork featuredWork={featuredWork}/>
+        })}
       </div>
     </>
   )

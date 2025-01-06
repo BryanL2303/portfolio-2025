@@ -1,0 +1,42 @@
+.blog-list .post-summary {
+    width: 100%;
+    margin-right: 2.5%;
+    padding-top: 2%;
+    height: 160px;
+    background-color: white;
+    border-bottom: solid;
+    border-color: grey;
+    border-width: 0.1px;
+}
+
+.blog-list .post-summary:hover {
+    background-color: lightgray;
+}
+
+.blog-list .post-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blog-list .row-section {
+    display: flex;
+    width: 100%;
+}
+
+.blog-list .post-date {
+    width: 15%;
+    border-right: solid;
+    border-width: 1px;
+    margin-right: 5%;
+    border-color: black;
+    font-size: 16px;
+}
+
+.blog-list .post-label {
+    font-size: 16px;
+    color: grey;
+}
+
+.blog-list .post-description {
+    font-size: 14px;
+}

@@ -6,8 +6,12 @@ function HomePost({post}) {
   const options = { day: "2-digit", month: "short", year: "numeric" };
   const formattedDate = new Intl.DateTimeFormat("en-US", options).format(dateObj);
 
+  function navigatePage() {
+    window.location.href = '/blogs/' + post.id
+  }
+
   return (
-    <div className='post-summary'>
+    <div className='post-summary' onClick={navigatePage}>
         <label className='post-title'>{post.post_title}</label>
         <div className='row-section'>
             <label className='post-date'>{formattedDate}</label>
