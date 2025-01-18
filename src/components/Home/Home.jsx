@@ -56,7 +56,9 @@ function Home() {
           <p className='greeting-p'>Graduating with a Bachelor in Computing, Computer Science in May 2025.</p>
           <p className='greeting-p'>Looking for work as a software engineer!</p>
           <br/>
-          <button className='resume-button'>Download Resume</button>
+          <a href="/resume.pdf" download="resume.pdf">
+            <button className='resume-button' onClick={downloadResume}>Download Resume</button>
+          </a>
         </div>
         <div className='profile-container'>
             <img className='profile-img' src={profilePhoto} alt='Profile Picture' />
