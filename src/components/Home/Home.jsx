@@ -57,7 +57,7 @@ function Home() {
           <p className='greeting-p'>Looking for work as a software engineer!</p>
           <br/>
           <a href="/resume.pdf" download="resume.pdf">
-            <button className='resume-button' onClick={downloadResume}>Download Resume</button>
+            <button className='resume-button'>Download Resume</button>
           </a>
         </div>
         <div className='profile-container'>
