@@ -1,5 +1,9 @@
+.administration-page-feature {
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
-.administration-page-feature .title-div {
+/* .administration-page-feature .title-div {
     margin-left: 15%;
     width: 70%;
     margin-top: 3%;
@@ -8,31 +12,22 @@
 
 .administration-page-feature .title-div h1 {
     width: 100%;
-}
+} */
 
 .administration-page-feature .title-div label {
     font-size: small;
 }
 
-.administration-page-feature .paragraph-1-div {
+/* .administration-page-feature .techstack-div {
     margin-left: 15%;
     margin-right: 15%;
-}
+} */
 
-.administration-page-feature .paragraph-2-div {
+/* .administration-page-feature .features-div {
     margin-left: 15%;
     margin-right: 15%;
-}
+} */
 
-.administration-page-feature .paragraph-2-div img {
-    width: 100%;
-}
-
-.administration-page-feature .paragraph-3-div {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.administration-page-feature .paragraph-3-div img {
+.administration-page-feature img {
     width: 100%;
 }
