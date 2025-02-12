@@ -11,7 +11,7 @@ function AdministrationPageFeature() {
     <div className='administration-page-feature'>
       <div className='title-div'>
           <h1>Administrative Site | Boys' Brigade</h1>
-          <label>25 December 2024   |   Fullstack development</label>
+          <label>12 February 2025   |   Fullstack development</label>
       </div>
 
       <div className='summary-div'>
